@@ -18,6 +18,24 @@ registration:
     - "google"
     - "openid"
 
+speech:
+  tts:
+    elevenlabs:
+      apiKey: '${TTS_API_KEY}'
+      model: 'eleven_turbo_v2_5'
+      
+      # Voices: Chris**, Jessica, Laura, Lily**, Will
+      # Chris and Lily are not yet fine tuned for eleven_multilingual_v2 and eleven_turbo_v2_5
+      voices: ['iP95p4xoKVk53GoZ742B', 'cgSgspJ2msm6clMCkdW9', 'FGY2WhTYpPnrIDTdsKH5', 'pFZP5JQG7iQjIQuC4Bku', 'bIHbv24MWmeRgasZH58o'] 
+      
+      #Additional Settings
+      # voice_settings:
+      #   similarity_boost: '' # number
+      #   stability: '' # number
+      #   style: '' # number
+      #   use_speaker_boost: # boolean
+      # pronunciation_dictionary_locators: [''] # list of strings (array)
+
 # endpoints:
 #   custom:
 #     # APIpie
